@@ -10,6 +10,7 @@ gem 'pg', '0.17.1'
 group :test do
 	gem "selenium-webdriver", "2.40.0"
 	gem 'capybara', '2.1.0'
+	gem "database_cleaner", "1.2.0"
 end
 
 group :development, :test do

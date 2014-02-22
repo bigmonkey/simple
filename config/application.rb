@@ -20,6 +20,9 @@ module Simple
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Added by Con Way to remove deprecation warning 
+    config.i18n.enforce_available_locales = true
+    
     # Added by Con Way. Adds a trailing slash
     config.action_controller.default_url_options = { trailing_slash: true }
 

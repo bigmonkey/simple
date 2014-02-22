@@ -19,5 +19,21 @@ module Simple
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Added by Con Way. Adds a trailing slash
+    config.action_controller.default_url_options = { trailing_slash: true }
+
+    # Added by Con Way. Set up test configuration to auto generate rspec/factory girl files
+    config.generators do |g| 
+        g.test_framework :rspec, 
+            :fixtures => true, 
+            :view_specs => false, 
+            :helper_specs => false, 
+            :routing_specs => false, 
+            :controller_specs => true, 
+            :request_specs => true 
+        g.fixture_replacement :factory_girl, :dir => "spec/factories" 
+    end 
+    
   end
 end

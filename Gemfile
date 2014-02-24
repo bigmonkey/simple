@@ -62,3 +62,5 @@ gem 'unicorn', '4.8.2'
 
 # used to keep pw's and tokens secret
 gem "figaro", "0.7.0"
+
+gem "devise", '3.2.3'

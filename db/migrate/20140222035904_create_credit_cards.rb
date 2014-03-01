@@ -3,7 +3,17 @@ class CreateCreditCards < ActiveRecord::Migration
     create_table :credit_cards do |t|
 	    t.integer		"card_code"
 	    t.string		"name"
+	    t.string		"card_name"
+	  	t.string   	"image_file"
+	    t.decimal  	"rating", precision: 3, scale: 1
 	    t.text			"description"
+	    t.string		"good"
+	    t.string		"bad"
+	    t.string		"intro_offer"
+	    t.string		"apr_desc"
+	    t.string		"cash_apr_desc"
+	    t.string		"penalty_apr_desc"
+	    t.string		"bal_trans_desc"
 	    t.decimal		"apr_min"
 	    t.decimal		"apr_max"
 	    t.decimal 	"intro_apr"

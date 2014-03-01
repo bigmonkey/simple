@@ -64,3 +64,5 @@ gem 'unicorn', '4.8.2'
 gem "figaro", "0.7.0"
 
 gem "devise", '3.2.3'
+
+gem 'activeadmin', github: 'gregbell/active_admin'

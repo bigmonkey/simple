@@ -2,7 +2,9 @@
 
 This app helps users find a credit card. Users input their credit card features and then this app compares the offers of other cards and calculates costs/rewards and balances.
 
-The site is runs on Heroku. It is a Rails app using unicorn and postgresql.
+It is a Rails app using unicorn and postgresql. 
+
+The site is NOT hosted on anything right now.
 
 Github stores the Rails code.
 
